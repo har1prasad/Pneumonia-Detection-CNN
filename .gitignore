@@ -1,0 +1,59 @@
+# ==========================================
+# Pneumonia Detection Project Git Ignore Rule set
+# ==========================================
+
+# --- Python Cache & Compiled Code ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+venv.bak/
+env.bak/
+
+# --- Local Dataset & Temp Files ---
+dataset/
+data/raw/
+data/processed/
+temp_uploads/
+
+# --- Model Weights & Large Binary Files ---
+# Trained models are binary files and should be versioned via LFS or registry, not standard git
+models/*.keras
+models/*.h5
+saved_models/
+
+# --- Output Metrics & Logs ---
+*.log
+models/training_log.csv
+models/test_metrics.txt
+models/classification_report.txt
+
+# --- Output Visualization Plots ---
+# (Optionally ignore if you prefer to commit them to show on GitHub,
+# but typically outputs/build artifacts are excluded from core code repos)
+# models/confusion_matrix.png
+# models/roc_curve.png
+# models/training_history.png
+
+# --- IDE & Editor Settings ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- OS-specific files ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
