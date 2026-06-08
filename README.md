@@ -4,6 +4,7 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange.svg)](https://tensorflow.org/)
 [![Keras](https://img.shields.io/badge/Keras-Native.keras-red.svg)](https://keras.io/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.22%2B-ff4b4b.svg)](https://streamlit.io/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-ff4b4b.svg)](https://pneumonia-detection-cnn-har1prasad.streamlit.app/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 An end-to-end, medical computer vision system that classifies posterior-anterior (PA) chest X-rays into **Normal** or **Pneumonia** classes. The core engine uses a deep **Convolutional Neural Network (CNN)** designed from scratch (without transfer learning) to extract clinical lung opacities and fluid-accumulation signatures. The project features an interactive, portfolio-grade multi-page Streamlit portal for clinical demonstrations.
@@ -166,7 +167,13 @@ python src/predict.py --image_path "path/to/your/xray.jpeg"
 
 ## 💻 Running the Streamlit App
 
-Launch the clinical dashboard portal locally:
+### Option 1: Live Deployment (No Setup Required)
+The app is deployed and accessible directly:
+
+🔗 **[https://pneumonia-detection-cnn-har1prasad.streamlit.app/](https://pneumonia-detection-cnn-har1prasad.streamlit.app/)**
+
+### Option 2: Run Locally
+Launch the clinical dashboard on your machine:
 ```bash
 streamlit run streamlit_app.py
 ```
