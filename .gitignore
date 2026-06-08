@@ -26,7 +26,6 @@ temp_uploads/
 
 # --- Model Weights & Large Binary Files ---
 # Trained models are binary files and should be versioned via LFS or registry, not standard git
-models/*.keras
 models/*.h5
 saved_models/
 
